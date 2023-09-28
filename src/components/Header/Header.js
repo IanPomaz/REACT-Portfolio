@@ -1,14 +1,14 @@
 import './Header.css'
 
-const Header = () =>
+const Header = ({setPage}) =>
     <div className='header'>
         <h1>Ian Pomaznyuk</h1>
 
         <div>
-            <button>About Me</button>
-            <button>Portfolio</button>
-            <button>Resume</button>
-            <button>Contact Me</button>
+            <button onClick={()=>setPage('about')}>About Me</button>
+            <button onClick={()=>setPage('portfolio')}>Portfolio</button>
+            <button onClick={()=>setPage('contact')}>Contact Me</button>
+            <button onClick={()=>setPage('resume')}>Resume</button>
         </div>
     </div>
 
