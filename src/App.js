@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Header, About, Portfolio, Contact, Resume } from "./components";
+import { Header, About, Portfolio, Contact, Resume, Footer } from "./components";
 
 const App = () => {
   const [page, setPage] = useState("about");
@@ -17,6 +17,8 @@ const App = () => {
       ) : (
         <Resume />
       )}
+
+        <Footer />
     </>
   );
 };
